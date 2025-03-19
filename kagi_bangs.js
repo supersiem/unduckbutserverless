@@ -109903,5 +109903,22 @@ let kagi_bangs =[
       "u": "https://huggingface.co/models?search={{{s}}}",
       "c": "Tech",
       "sc": "Libraries/Frameworks"
+    },
+    {
+      "s": "t3 chat",
+      "d": "t3.chat",
+      "t": "t3",
+      "u": "https://t3.chat/new?model=gemini-2.0-flash&q={{{s}}}",
+      "c": "Tech",
+      "sc": "Libraries/Frameworks"
+    }
+    ,
+    {
+      "s": "t3 chat 4o-mini",
+      "d": "t3.chat",
+      "t": "4om",
+      "u": "https://t3.chat/new?model=gpt-4o-mini&q={{{s}}}",
+      "c": "Tech",
+      "sc": "Libraries/Frameworks"
     }
   ];
