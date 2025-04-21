@@ -6,10 +6,13 @@ let q = b.searchParams.get("q");
 let q2 = q.split(" ");
 q2.forEach(split => {
     if (split.startsWith("!")) {
-        kagi_bangs.forEach(element => {
-            if (split.replaceAll("!", "") == element.t) {
-                c = element.u;
-                q = q.replaceAll(split + " ", "");
+        kagi_bangs.forEach(bang => {
+            if (split == "!" + bang.t) {
+                c = bang.u;
+                // voor in het begin/midden van de url
+                q = q.replace(split + " ", "");
+                // voor het einde van de url
+                q = q.replace(split, "");
             }
         });
     }
