@@ -9,7 +9,7 @@ q2.forEach(split => {
         kagi_bangs.forEach(element => {
             if (split.replaceAll("!", "") == element.t) {
                 c = element.u;
-                q = q.replaceAll(split, "");
+                q = q.replaceAll(split + " ", "");
             }
         });
     }
