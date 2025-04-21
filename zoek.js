@@ -7,7 +7,7 @@ let q2 = q.split(" ");
 q2.forEach(split => {
     if (split.startsWith("!")) {
         kagi_bangs.forEach(bang => {
-            if (split == "!" + bang.t) {
+            if (split.toLocaleLowerCase() == "!" + bang.t.toLocaleLowerCase()) {
                 c = bang.u;
                 // voor in het begin/midden van de url
                 q = q.replace(split + " ", "");
